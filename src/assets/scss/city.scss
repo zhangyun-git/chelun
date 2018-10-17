@@ -1,0 +1,100 @@
+.city{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    .location{
+        width: 100%;
+        p{
+            &:first-child{
+                height: .4rem;
+                line-height: .4rem;
+                font-size: .24rem;
+                padding-left: .2rem;
+                background: #f4f4f4;
+            }
+            &:last-child{
+                padding-left: .4rem;
+                font-size: .28rem;
+                height: .8rem;
+                line-height: .8rem;
+                background: #fff;
+            }
+        }
+    }
+    .city_list{
+        width: 100%;
+        flex:1;
+        >p{
+            height: .4rem;
+            line-height: .4rem;
+            font-size: .24rem;
+            padding-left: .2rem;
+            background: #f4f4f4;
+        }
+        ul{
+            li{
+                padding-left: .3rem;
+                font-size: .28rem;
+                height: .8rem;
+                line-height: .8rem;
+                border-bottom: 1px solid #eee;
+                box-sizing: border-box;
+                margin-left: .1rem;
+                position: relative;
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    padding-top: .16rem;
+                    padding-right: .16rem;
+                    border-top: 1px solid #999;
+                    border-right: 1px solid #999;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: .35rem;
+                    top: .3rem;
+                }
+            }
+        }
+    }
+}
+.city_mar{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+.city_right{
+    width: 70%;
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    ol{
+        li{
+            padding-left: .3rem;
+            font-size: .28rem;
+            height: .8rem;
+            line-height: .8rem;
+            border-bottom: 1px solid #eee;
+            box-sizing: border-box;
+            margin-left: .1rem;
+        }
+    }
+}

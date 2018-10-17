@@ -1,0 +1,152 @@
+.app {
+  background: #fff;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.wrap .list h3 {
+  background: #f4f4f4;
+  color: #aaa;
+  font-size: .24rem;
+  padding-left: .2rem;
+  box-sizing: border-box;
+  line-height: .4rem;
+  font-weight: 400;
+}
+
+.wrap ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 .28rem;
+}
+
+.wrap ul li {
+  height: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.wrap ul li:last-child {
+  border-bottom: 0;
+}
+
+.wrap ul li img {
+  width: .7rem;
+}
+
+.wrap ul li span {
+  font-size: .32rem;
+  margin-left: .4rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  top: 18%;
+  right: .1rem;
+  z-index: 99;
+}
+
+.title p {
+  font-size: .26rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.CarSystem.move {
+  transform: translateX(0) !important;
+}
+
+.CarSystem {
+  z-index: 100;
+  width: 74%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 0.5rem #eee;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.CarSystem .make h3 {
+  margin-left: .02rem;
+  font-size: .26rem;
+  line-height: .48rem;
+  background: #f2f2f2;
+  padding-left: .28rem;
+  color: #717171;
+  font-weight: 400;
+}
+
+.CarSystem .make ol {
+  display: flex;
+  flex-direction: column;
+  margin-left: .08rem;
+}
+
+.CarSystem .make ol li {
+  display: flex;
+  padding: .08rem;
+  box-sizing: border-box;
+  border-bottom: .02rem solid #ccc;
+  align-items: center;
+}
+
+.CarSystem .make ol li:last-child {
+  border-bottom: 0;
+}
+
+.CarSystem .make ol li img {
+  width: 1.8rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+.CarSystem .make ol li p {
+  display: flex;
+  flex-direction: column;
+  padding-left: .2rem;
+  box-sizing: border-box;
+}
+
+.CarSystem .make ol li p span:first-child {
+  font-size: .32rem;
+  color: #5f687a;
+}
+
+.CarSystem .make ol li p span:last-child {
+  margin-top: .1rem;
+  font-size: .28rem;
+  color: red;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

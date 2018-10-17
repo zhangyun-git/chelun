@@ -1,0 +1,81 @@
+.carList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f4f4f4;
+    >span{
+        font-size: .34rem;
+        color: #00afff;
+        background: #fff;
+        text-align: center;
+        line-height: .8rem;
+        height: .8rem;
+        margin-top: .15rem;
+    }
+    .c-type{
+        margin-top: .15rem;
+        padding-left: .2rem;
+        font-size: .3rem;
+        line-height: .7rem;
+        height: .7rem;
+        background: #fff;
+        overflow-x: scroll;
+        flex-shrink: 0;
+        span{
+            padding-left: .2rem;
+            padding-right: .2rem;
+            font-size: .3rem;
+        }
+    }
+    .item{
+        background: #fff;
+        >p{
+            height: .5rem;
+            line-height: .5rem;
+            padding: 0 .2rem;
+            height: .6rem;
+            line-height: .6rem;
+            font-size: .24rem;
+            color: #666;
+            background: #eee;
+        }
+    }
+    .valu{
+        margin: 0 .2rem;
+        padding: .28rem .06rem;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+        height: 1.25rem;
+        line-height: 1;
+        >div{
+            font-size: .3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                &:last-child{
+                    color: red;
+                }
+            }
+        }
+        >p{
+            padding-top: .16rem;
+            font-size: .24rem;
+            display: flex;
+            justify-content: space-between;
+            color: #818181;
+        }
+    }
+}
+.active{
+    color: #00afff;
+}
+.titles{
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
